@@ -5,12 +5,45 @@ A comprehensive collection of skills, examples, and helper tools to help AI agen
 - **Reactive Python notebooks** using Marimo
 - **Well-designed interfaces** following UI/UX best practices
 
+## 🚀 Installation
+
+### Add to Claude Code
+
+To add this marketplace to Claude Code:
+
+```bash
+# In Claude Code, run:
+/marketplace add https://github.com/Jrakru/marketplace_UI
+```
+
+Or manually add to your `.claude/settings.json`:
+
+```json
+{
+  "marketplaces": [
+    "https://github.com/Jrakru/marketplace_UI"
+  ]
+}
+```
+
+Then install individual skills using:
+```bash
+/skills install textual-getting-started
+/skills install marimo-getting-started
+/skills install cli-ux-principles
+```
+
+Or browse all available skills:
+```bash
+/skills browse
+```
+
 ## 📚 Overview
 
 This marketplace provides:
-- **45+ Skills** covering:
+- **16 Skills** covering:
   - Textual TUI development (10 skills)
-  - Marimo reactive notebooks (3 skills)
+  - Marimo reactive notebooks (4 skills)
   - UI/UX design principles (2 skills)
 - **Helper Scripts** for code generation and assistance
 - **Templates** for common patterns
@@ -22,8 +55,11 @@ This marketplace provides:
 
 ```
 marketplace_UI/
+├── .claude-plugin/      # Claude Code marketplace configuration
+│   └── marketplace.json     # Plugin registry with 16 skills
+│
 ├── skills/              # Organized by framework/category
-│   ├── textual/         # Textual TUI framework skills
+│   ├── textual/         # Textual TUI framework skills (10 skills)
 │   │   ├── core/            # Getting started, app lifecycle
 │   │   ├── widgets/         # Built-in and custom widgets
 │   │   ├── layout/          # Layouts and CSS styling
@@ -31,11 +67,12 @@ marketplace_UI/
 │   │   ├── reactivity/      # Reactive attributes
 │   │   ├── navigation/      # Screens and navigation
 │   │   └── testing/         # Testing patterns
-│   ├── marimo/          # Marimo reactive notebooks ⭐ NEW
+│   ├── marimo/          # Marimo reactive notebooks (4 skills)
 │   │   ├── 01_getting_started.py
 │   │   ├── 02_widgets_ui.py
-│   │   └── 03_layouts.py
-│   └── design/          # UI/UX design principles ⭐ NEW
+│   │   ├── 03_layouts.py
+│   │   └── 04_working_with_marimo.py
+│   └── design/          # UI/UX design principles (2 skills)
 │       ├── 01_cli_ux_principles.py
 │       └── 02_general_ui_ux.py
 │
@@ -44,7 +81,7 @@ marketplace_UI/
 │   ├── template_manager.py     # Code templates (Textual)
 │   ├── skill_finder.py         # Find relevant skills
 │   ├── quick_reference.py      # Quick lookup guide (Textual)
-│   └── marimo/                  # Marimo integration helpers ⭐ NEW
+│   └── marimo/                  # Marimo integration helpers
 │       ├── marimo_generator.py      # Generate marimo notebooks
 │       ├── marimo_cli_helper.py     # CLI wrapper for marimo commands
 │       └── README.md                # Marimo helpers documentation
