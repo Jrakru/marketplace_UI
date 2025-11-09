@@ -1,34 +1,48 @@
-# Textual Marketplace - Skills & Helpers for AI Agents
+# UI Development Marketplace - Skills & Helpers for AI Agents
 
-A comprehensive collection of skills, examples, and helper tools to help AI agents build Python TUI (Text User Interface) applications using Textual.
+A comprehensive collection of skills, examples, and helper tools to help AI agents build:
+- **Python TUI (Text User Interface)** applications using Textual
+- **Reactive Python notebooks** using Marimo
+- **Well-designed interfaces** following UI/UX best practices
 
 ## 📚 Overview
 
 This marketplace provides:
-- **37+ Skills** covering all aspects of Textual development
+- **45+ Skills** covering:
+  - Textual TUI development (10 skills)
+  - Marimo reactive notebooks (3 skills)
+  - UI/UX design principles (2 skills)
 - **Helper Scripts** for code generation and assistance
 - **Templates** for common patterns
 - **Testing Examples** with pytest and snapshot testing
 - **Quick Reference** guides for fast lookups
+- **Best Practices** for CLI, notebook, and general UI design
 
 ## 🗂️ Repository Structure
 
 ```
-marketplace_textual/
+marketplace_UI/
 ├── skills/              # Organized by category
-│   ├── core/            # Getting started, app lifecycle
-│   ├── widgets/         # Built-in and custom widgets
-│   ├── layout/          # Layouts and CSS styling
-│   ├── interactivity/   # Events, messages, actions
-│   ├── reactivity/      # Reactive attributes
-│   ├── navigation/      # Screens and navigation
-│   ├── testing/         # Testing patterns
-│   ├── dom/             # DOM queries and manipulation
-│   ├── input/           # Input handling and validation
-│   ├── advanced/        # Workers, animation, timers
-│   ├── development/     # Debugging and devtools
-│   ├── accessibility/   # Accessibility features
-│   └── integration/     # Integrations (Rich, CLI)
+│   ├── core/            # Getting started, app lifecycle (Textual)
+│   ├── widgets/         # Built-in and custom widgets (Textual)
+│   ├── layout/          # Layouts and CSS styling (Textual)
+│   ├── interactivity/   # Events, messages, actions (Textual)
+│   ├── reactivity/      # Reactive attributes (Textual)
+│   ├── navigation/      # Screens and navigation (Textual)
+│   ├── testing/         # Testing patterns (Textual)
+│   ├── marimo/          # Marimo reactive notebooks ⭐ NEW
+│   │   ├── 01_getting_started.py
+│   │   ├── 02_widgets_ui.py
+│   │   └── 03_layouts.py
+│   ├── design/          # UI/UX design principles ⭐ NEW
+│   │   ├── 01_cli_ux_principles.py
+│   │   └── 02_general_ui_ux.py
+│   ├── dom/             # DOM queries and manipulation (Textual)
+│   ├── input/           # Input handling and validation (Textual)
+│   ├── advanced/        # Workers, animation, timers (Textual)
+│   ├── development/     # Debugging and devtools (Textual)
+│   ├── accessibility/   # Accessibility features (Textual)
+│   └── integration/     # Integrations (Rich, CLI) (Textual)
 │
 ├── helpers/             # AI agent helper scripts
 │   ├── textual_generator.py    # Generate apps/widgets
@@ -38,6 +52,7 @@ marketplace_textual/
 │
 ├── examples/            # Complete example apps
 ├── templates/           # Project templates
+├── SKILLS_INDEX.md      # Complete skills catalog
 └── README.md
 ```
 
@@ -86,7 +101,18 @@ marketplace_textual/
 24. **DevTools** - Debugging, console, inspection
 25. **Best Practices** - Patterns and anti-patterns
 
+### Marimo (Reactive Notebooks) ⭐ NEW
+26. **Getting Started with Marimo** - Reactive notebooks, cells, basic structure
+27. **Marimo Widgets** - Interactive UI components, forms, data tables
+28. **Marimo Layouts** - Organizing notebooks with stacks, tabs, grids
+
+### UI/UX Design ⭐ NEW
+29. **CLI UX Principles** - Human-first design, progressive discovery, helpful errors
+30. **General UI/UX** - Color theory, typography, accessibility, layout principles
+
 ## 🚀 Quick Start for AI Agents
+
+### For Textual TUI Development
 
 ### 1. Find Relevant Skills
 
@@ -169,9 +195,105 @@ form_pattern = get_pattern("form")
 modal_pattern = get_pattern("modal")
 ```
 
+### For Marimo Reactive Notebooks ⭐ NEW
+
+#### 1. Create Your First Notebook
+
+```bash
+# Install marimo
+pip install marimo
+
+# Create a new notebook
+marimo edit my_notebook.py
+
+# Run interactive tutorial
+marimo tutorial intro
+```
+
+#### 2. Basic Notebook Structure
+
+```python
+import marimo
+
+__generated_with = "0.10.11"
+app = marimo.App()
+
+@app.cell
+def __():
+    import marimo as mo
+    import pandas as pd
+    return mo, pd
+
+@app.cell
+def __(mo):
+    # Create interactive widget
+    slider = mo.ui.slider(0, 100, value=50, label="Value:")
+    slider
+    return slider,
+
+@app.cell
+def __(mo, slider):
+    # Use reactive value
+    mo.md(f"**Selected value:** {slider.value}")
+    return
+
+if __name__ == "__main__":
+    app.run()
+```
+
+#### 3. Create Interactive Dashboards
+
+```python
+@app.cell
+def __(mo):
+    # Dashboard layout with controls
+    controls = mo.hstack([
+        mo.ui.dropdown(
+            options=["2024", "2023", "2022"],
+            value="2024",
+            label="Year"
+        ),
+        mo.ui.checkbox(value=True, label="Show Grid")
+    ], gap=2)
+    controls
+    return
+
+@app.cell
+def __(mo, df):
+    # Interactive data explorer
+    explorer = mo.ui.dataframe(df)
+    explorer
+    return
+```
+
+### For UI/UX Design ⭐ NEW
+
+#### Key Design Principles
+
+**CLI Design:**
+- Progressive discovery (guide users step-by-step)
+- Helpful error messages with solutions
+- Consistent command patterns
+- Both human and machine-readable output
+
+**General UI/UX:**
+- Clarity and simplicity first
+- Maintain 4.5:1 color contrast (WCAG AA)
+- Visual hierarchy guides attention
+- Provide immediate feedback for actions
+- Design for accessibility from the start
+
+**Notebook Design:**
+- Use reactive execution (like Marimo) for reproducibility
+- Clear code organization (imports first)
+- Progressive disclosure of complexity
+- Graceful error handling with helpful messages
+
 ## 📖 Skill Categories
 
-### Core Skills
+### Textual Skills
+
+#### Core Skills
 - **01_getting_started.py** - Project setup, basic app structure, async
 - **02_app_lifecycle.py** - Lifecycle events, configuration, CLI args
 
@@ -193,10 +315,21 @@ modal_pattern = get_pattern("modal")
 ### Navigation Skills
 - **01_screens.py** - Multi-screen apps, modals, navigation
 
-### Testing Skills
+#### Testing Skills
 - **01_snapshot_testing.py** - Visual regression testing
 - **02_unit_testing.py** - Component testing
 - **03_integration_testing.py** - End-to-end testing
+
+### Marimo Skills ⭐ NEW
+
+- **01_getting_started.py** - Reactive notebooks, cells, basic structure, running notebooks
+- **02_widgets_ui.py** - Interactive UI components (text, slider, dropdown, tables, forms)
+- **03_layouts.py** - Organizing notebooks (hstack, vstack, tabs, accordion, sidebar)
+
+### UI/UX Design Skills ⭐ NEW
+
+- **01_cli_ux_principles.py** - Human-first design, progressive discovery, error messages, CLI patterns, accessibility
+- **02_general_ui_ux.py** - Color theory, typography, layout, WCAG accessibility, notebook design best practices
 
 ## 🛠️ Helper Scripts
 
@@ -374,7 +507,7 @@ pytest tests/test_app.py -v
 
 ## 📚 Learning Paths
 
-### Beginner Path
+### Path 1: Textual TUI Development (Beginner)
 1. Getting Started with Textual
 2. Built-in Widget Usage
 3. Layout Systems
@@ -382,7 +515,34 @@ pytest tests/test_app.py -v
 5. Events and Messages
 6. Snapshot Testing
 
-### Intermediate Path
+**Goal:** Create functional TUI applications
+**Time:** 2-4 hours
+
+---
+
+### Path 2: Marimo Reactive Notebooks ⭐ NEW
+1. Getting Started with Marimo
+2. Widgets and UI Components
+3. Layouts and Organization
+4. General UI/UX Principles (for design)
+
+**Goal:** Build interactive, reactive notebooks
+**Time:** 3-5 hours
+
+---
+
+### Path 3: UI/UX Excellence ⭐ NEW
+1. CLI UX Design Principles
+2. General UI/UX Design
+3. Apply to Textual apps (Layout & Styling)
+4. Apply to Marimo notebooks (Widgets & Layouts)
+
+**Goal:** Master UI/UX design principles across platforms
+**Time:** 4-6 hours
+
+---
+
+### Path 4: Textual Advanced Development
 1. Custom Widget Development
 2. Reactive Attributes
 3. Screens and Navigation
@@ -390,12 +550,20 @@ pytest tests/test_app.py -v
 5. Input Validation
 6. Unit Testing
 
-### Advanced Path
+**Goal:** Build complex, interactive TUI applications
+**Time:** 6-8 hours
+
+---
+
+### Path 5: Expert TUI Development
 1. Workers & Async Operations
 2. Animation
 3. Advanced Testing Strategies
 4. Performance Optimization
 5. Complex State Management
+
+**Goal:** Production-ready TUI applications
+**Time:** 8-12 hours
 
 ## 🎨 Design Patterns
 
@@ -430,6 +598,7 @@ def watch_state(self, new_state):
 
 ## 🔧 Best Practices
 
+### Textual TUI Development
 1. **Use External CSS** - Enables hot reload during development
 2. **ID for Unique, Classes for Groups** - Better query organization
 3. **Reactive for State** - Auto-updating UI
@@ -438,6 +607,26 @@ def watch_state(self, new_state):
 6. **Type Hints** - Better code clarity
 7. **Docstrings** - Document your widgets and methods
 8. **Keep compose() Simple** - One responsibility per widget
+
+### Marimo Notebooks ⭐ NEW
+1. **Import marimo as mo** - Always in first cell
+2. **One Operation per Cell** - Keep cells focused
+3. **Return All Variables** - Return values you want to reuse (as tuple)
+4. **No Redeclaration** - Never redeclare variables across cells
+5. **Prefix Temporaries** - Use underscore for local variables (_temp)
+6. **Avoid Cycles** - No circular dependencies between cells
+7. **Encapsulate in Functions** - Minimize global variables
+8. **Test Reactivity** - Ensure widgets trigger correct cell updates
+
+### UI/UX Design ⭐ NEW
+1. **Accessibility First** - Design for WCAG 2.1 AA compliance from start
+2. **4.5:1 Contrast** - Minimum for normal text readability
+3. **Progressive Discovery** - Guide users step-by-step
+4. **Helpful Errors** - Include what, why, and how to fix
+5. **Consistent Patterns** - Same actions should work the same way
+6. **Visual Hierarchy** - Use size, color, position to guide attention
+7. **Mobile-First** - Design for smallest screen, scale up
+8. **Color Independence** - Never use color alone to convey information
 
 ## 🐛 Common Issues & Solutions
 
@@ -459,31 +648,62 @@ def watch_state(self, new_state):
 
 ## 📖 Resources
 
+### Textual
 - **Official Docs**: https://textual.textualize.io
 - **Tutorial**: https://textual.textualize.io/tutorial/
 - **Widget Gallery**: https://textual.textualize.io/widget_gallery/
 - **GitHub**: https://github.com/Textualize/textual
+- **Discord**: https://discord.gg/Enf6Z3qhVr
+
+### Marimo ⭐ NEW
+- **Official Docs**: https://docs.marimo.io
+- **Website**: https://marimo.io
+- **GitHub**: https://github.com/marimo-team/marimo
+- **Getting Started**: Run `marimo tutorial intro`
+- **Examples**: https://docs.marimo.io/examples/
+- **Real Python Tutorial**: https://realpython.com/marimo-notebook/
+
+### UI/UX Design ⭐ NEW
+- **CLI Guidelines**: https://clig.dev/
+- **WCAG 2.1**: https://www.w3.org/WAI/WCAG21/quickref/
+- **WebAIM Contrast Checker**: https://webaim.org/resources/contrastchecker/
+- **Material Design**: https://material.io/design
+- **Interaction Design Foundation**: https://www.interaction-design.org/
+- **A11y Project**: https://www.a11yproject.com/
 
 ## 🤝 Contributing
 
 This marketplace is designed for AI agents. To add new skills:
 
-1. Create skill file in appropriate category
+1. Create skill file in appropriate category (textual, marimo, or design)
 2. Follow existing skill format
 3. Include working examples
 4. Add docstrings and comments
-5. Include test cases
+5. Include test cases (where applicable)
+6. Update SKILLS_INDEX.md with new skill details
 
 ## 📄 License
 
-This collection is provided as-is for AI agents to learn and build Textual applications.
+This collection is provided as-is for AI agents to learn and build:
+- Textual TUI applications
+- Marimo reactive notebooks
+- Well-designed user interfaces
 
 ## 🙋 Support
 
-For Textual-specific questions:
+### Textual
 - Discord: https://discord.gg/Enf6Z3qhVr
 - GitHub Issues: https://github.com/Textualize/textual/issues
 
+### Marimo
+- GitHub Discussions: https://github.com/marimo-team/marimo/discussions
+- GitHub Issues: https://github.com/marimo-team/marimo/issues
+
+### UI/UX Design
+- Refer to the design skills for principles and best practices
+- Community resources linked in Resources section above
+
 ---
 
-**Happy TUI Building! 🎉**
+**Happy Building! 🎉**
+*Create beautiful TUIs with Textual, reactive notebooks with Marimo, and accessible interfaces with great UX!*

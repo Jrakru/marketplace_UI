@@ -1,4 +1,4 @@
-# Textual Skills Index
+# Skills Index - UI Development Marketplace
 
 Complete catalog of all available skills organized by category and difficulty.
 
@@ -6,13 +6,15 @@ Complete catalog of all available skills organized by category and difficulty.
 
 | Category | Skills | Difficulty | Priority |
 |----------|--------|------------|----------|
-| Core | 2 | Beginner | Essential |
-| Widgets | 2 | Beginner-Intermediate | Essential |
-| Layout | 2 | Beginner-Intermediate | Essential |
-| Interactivity | 1 | Intermediate | Essential |
-| Reactivity | 1 | Intermediate | Recommended |
-| Navigation | 1 | Intermediate | Recommended |
-| Testing | 1 | Intermediate | Recommended |
+| Core (Textual) | 2 | Beginner | Essential |
+| Widgets (Textual) | 2 | Beginner-Intermediate | Essential |
+| Layout (Textual) | 2 | Beginner-Intermediate | Essential |
+| Interactivity (Textual) | 1 | Intermediate | Essential |
+| Reactivity (Textual) | 1 | Intermediate | Recommended |
+| Navigation (Textual) | 1 | Intermediate | Recommended |
+| Testing (Textual) | 1 | Intermediate | Recommended |
+| **Marimo (Notebooks)** | **3** | **Beginner-Intermediate** | **Recommended** |
+| **Design (UI/UX)** | **2** | **All Levels** | **Essential** |
 | DOM | 0 | Intermediate | Optional |
 | Input | 0 | Intermediate | Optional |
 | Advanced | 0 | Advanced | Optional |
@@ -530,6 +532,212 @@ pattern = get_pattern("counter")
 
 ---
 
+## 📓 Marimo Skills (Reactive Notebooks)
+
+### 11. Getting Started with Marimo
+**File:** `skills/marimo/01_getting_started.py`
+**Difficulty:** Beginner
+**Covers:**
+- Installation and setup
+- Basic notebook structure
+- Reactive execution model
+- Creating cells
+- Import patterns
+- Running notebooks
+
+**Key Examples:**
+- BasicMarimoNotebook
+- ReactiveCounter
+- InteractiveDataVisualization
+
+**When to Use:**
+- Building reactive Python notebooks
+- Data exploration and analysis
+- Creating interactive dashboards
+- Reproducible research
+- Educational content
+
+---
+
+### 12. Marimo Widgets and UI Components
+**File:** `skills/marimo/02_widgets_ui.py`
+**Difficulty:** Beginner-Intermediate
+**Covers:**
+- Input widgets (text, number, slider)
+- Selection widgets (dropdown, checkbox, radio)
+- Data widgets (table, dataframe)
+- File upload widgets
+- Code editor widget
+- Composite widgets (form, array, dictionary)
+- Button actions
+- Widget reactivity
+
+**Key Examples:**
+- TextInputDemo
+- DataTableExplorer
+- FormSubmission
+- InteractiveControls
+
+**When to Use:**
+- Creating interactive notebooks
+- Building data exploration tools
+- Form-based data entry
+- Parameter tuning interfaces
+- Dashboard controls
+
+---
+
+### 13. Marimo Layouts and UI Organization
+**File:** `skills/marimo/03_layouts.py`
+**Difficulty:** Intermediate
+**Covers:**
+- Horizontal stacks (mo.hstack)
+- Vertical stacks (mo.vstack)
+- Grid layouts
+- Tabs (mo.ui.tabs)
+- Accordions (mo.accordion)
+- Sidebar (mo.sidebar)
+- Navigation menus
+- Callouts and alerts
+
+**Key Examples:**
+- DashboardLayout
+- TabbedInterface
+- GridLayout
+- SidebarNavigation
+
+**When to Use:**
+- Organizing complex notebooks
+- Creating dashboard-style layouts
+- Building multi-section interfaces
+- Navigation in large notebooks
+- Highlighting important information
+
+---
+
+## 🎨 UI/UX Design Skills
+
+### 14. CLI UX Design Principles
+**File:** `skills/design/01_cli_ux_principles.py`
+**Difficulty:** All Levels
+**Covers:**
+- Human-first design
+- Progressive discovery
+- Helpful error messages
+- Arguments vs flags
+- Consistency patterns
+- Colors and formatting
+- Output modes (human/machine)
+- CLI accessibility
+- Common CLI patterns
+
+**Key Concepts:**
+- Feedback and progress indicators
+- Interactive prompts
+- Documentation in tools
+- Composability and pipes
+- Testing CLI UX
+
+**When to Use:**
+- Building command-line tools
+- Creating developer tools
+- Designing TUI applications
+- Improving CLI user experience
+- Writing helpful error messages
+
+---
+
+### 15. General UI/UX Design Principles
+**File:** `skills/design/02_general_ui_ux.py`
+**Difficulty:** All Levels
+**Covers:**
+- Core UX principles (clarity, consistency, feedback)
+- Color theory and harmonies
+- Typography principles
+- Layout and grid systems
+- Accessibility (WCAG 2.1)
+- Notebook interface design
+- Visual hierarchy
+- Responsive design
+- Mobile-first approach
+
+**Key Concepts:**
+- POUR principles (Perceivable, Operable, Understandable, Robust)
+- Contrast ratios and color accessibility
+- F and Z reading patterns
+- White space and visual balance
+- Progressive disclosure
+
+**When to Use:**
+- Designing any user interface
+- Creating accessible applications
+- Building notebook interfaces
+- Improving existing UX
+- Ensuring WCAG compliance
+- Color scheme selection
+
+---
+
+## 🎓 Updated Learning Paths
+
+### Path 1: Textual TUI Development (Beginner)
+1. Getting Started with Textual (core/01)
+2. Built-in Widgets (widgets/01)
+3. Layout Systems (layout/01)
+4. Events and Messages (interactivity/01)
+5. CSS Styling (layout/02)
+
+**Goal:** Create functional TUI applications
+**Time:** 2-4 hours
+
+---
+
+### Path 2: Marimo Reactive Notebooks (Beginner)
+1. Getting Started with Marimo (marimo/01)
+2. Widgets and UI Components (marimo/02)
+3. Layouts and Organization (marimo/03)
+4. General UI/UX Principles (design/02)
+
+**Goal:** Build interactive, reactive notebooks
+**Time:** 3-5 hours
+
+---
+
+### Path 3: UI/UX Excellence (All Levels)
+1. CLI UX Design Principles (design/01)
+2. General UI/UX Design (design/02)
+3. Apply to Textual apps (layout/02, widgets/01)
+4. Apply to Marimo notebooks (marimo/02, marimo/03)
+
+**Goal:** Master UI/UX design principles across platforms
+**Time:** 4-6 hours
+
+---
+
+## 🆕 Updated Use Cases
+
+### Use Case: Interactive Data Dashboard (Marimo)
+**Skills Needed:**
+1. marimo/01 (Getting Started)
+2. marimo/02 (Widgets for controls)
+3. marimo/03 (Dashboard layouts)
+4. design/02 (Color theory, accessibility)
+
+### Use Case: CLI Tool with Great UX
+**Skills Needed:**
+1. design/01 (CLI UX principles)
+2. core/01 (If using Textual for TUI)
+3. design/02 (General UX principles)
+
+### Use Case: Accessible Notebook Interface
+**Skills Needed:**
+1. marimo/01 (Notebook basics)
+2. marimo/02 (UI components)
+3. design/02 (Accessibility, color contrast)
+4. marimo/03 (Layouts)
+
+---
+
 ## 📖 Next Steps
 
 1. **Browse Skills** - Explore the skills/ directory
@@ -541,4 +749,7 @@ pattern = get_pattern("counter")
 
 ---
 
-**Pro Tip:** Start with the quick reference (helpers/quick_reference.py) for instant syntax lookups!
+**Pro Tip:**
+- For Textual TUIs: Start with the quick reference (helpers/quick_reference.py) for instant syntax lookups!
+- For Marimo notebooks: Run `marimo tutorial intro` to get started interactively
+- For UI/UX design: Review accessibility guidelines (design/02_general_ui_ux.py) before starting any project
