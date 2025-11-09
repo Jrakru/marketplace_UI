@@ -615,6 +615,32 @@ pattern = get_pattern("counter")
 
 ---
 
+### 14. Working with Marimo in Claude Code
+**File:** `skills/marimo/04_working_with_marimo.py`
+**Difficulty:** Beginner-Intermediate
+**Covers:**
+- Using marimo helper scripts
+- CLI commands and workflows
+- Programmatic notebook generation
+- Validation and debugging
+- Export and deployment
+- Best practices for Claude Code integration
+
+**Key Features:**
+- Complete workflow examples
+- Helper script demonstrations
+- CLI reference guide
+- Common patterns and templates
+
+**When to Use:**
+- Integrating marimo with Claude Code
+- Automating notebook creation
+- Building notebook generation tools
+- Learning marimo CLI
+- Setting up deployment pipelines
+
+---
+
 ## 🎨 UI/UX Design Skills
 
 ### 14. CLI UX Design Principles

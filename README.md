@@ -39,11 +39,15 @@ marketplace_UI/
 │       ├── 01_cli_ux_principles.py
 │       └── 02_general_ui_ux.py
 │
-├── helpers/             # AI agent helper scripts (Textual-focused)
-│   ├── textual_generator.py    # Generate apps/widgets
-│   ├── template_manager.py     # Code templates
+├── helpers/             # AI agent helper scripts
+│   ├── textual_generator.py    # Generate Textual apps/widgets
+│   ├── template_manager.py     # Code templates (Textual)
 │   ├── skill_finder.py         # Find relevant skills
-│   └── quick_reference.py      # Quick lookup guide
+│   ├── quick_reference.py      # Quick lookup guide (Textual)
+│   └── marimo/                  # Marimo integration helpers ⭐ NEW
+│       ├── marimo_generator.py      # Generate marimo notebooks
+│       ├── marimo_cli_helper.py     # CLI wrapper for marimo commands
+│       └── README.md                # Marimo helpers documentation
 │
 ├── examples/            # Complete example apps
 ├── templates/           # Project templates
@@ -320,6 +324,7 @@ def __(mo, df):
 - **01_getting_started.py** - Reactive notebooks, cells, basic structure, running notebooks
 - **02_widgets_ui.py** - Interactive UI components (text, slider, dropdown, tables, forms)
 - **03_layouts.py** - Organizing notebooks (hstack, vstack, tabs, accordion, sidebar)
+- **04_working_with_marimo.py** - Using marimo with Claude Code, helper scripts, CLI commands, workflows
 
 ### UI/UX Design Skills (skills/design/) ⭐ NEW
 
@@ -327,6 +332,63 @@ def __(mo, df):
 - **02_general_ui_ux.py** - Color theory, typography, layout, WCAG accessibility, notebook design best practices
 
 ## 🛠️ Helper Scripts
+
+### Marimo Helpers ⭐ NEW
+
+Located in `helpers/marimo/`, these scripts help Claude Code work seamlessly with marimo notebooks:
+
+#### marimo_generator.py
+Programmatically generate marimo notebooks.
+
+**Features:**
+- `MarimoNotebookGenerator` class for building notebooks cell-by-cell
+- Template generators (`create_basic_notebook`, `create_data_analysis_notebook`, `create_dashboard_notebook`)
+- Pattern library for common reactive components
+- Type-safe cell dependencies and returns
+
+**Example:**
+```python
+from helpers.marimo.marimo_generator import MarimoNotebookGenerator
+
+gen = MarimoNotebookGenerator()
+gen.add_imports_cell(["import marimo as mo", "import pandas as pd"])
+gen.add_markdown_cell("# My Analysis")
+gen.add_widget_cell("slider", "slider", start=0, stop=100)
+gen.save("analysis.py")
+```
+
+#### marimo_cli_helper.py
+Wrapper around marimo CLI for programmatic control.
+
+**Features:**
+- Installation checking
+- Notebook creation from templates
+- Edit/run command generation
+- Export to HTML, WASM, Markdown
+- Notebook validation
+- Tutorial launcher
+
+**Example:**
+```python
+from helpers.marimo.marimo_cli_helper import MarimoCliHelper
+
+helper = MarimoCliHelper()
+
+# Create from template
+helper.create_notebook("dashboard.py", template="dashboard")
+
+# Validate
+result = helper.validate_notebook("dashboard.py")
+
+# Export to WASM for GitHub Pages
+helper.export_notebook("dashboard.py", "html-wasm", "index.html")
+```
+
+See `helpers/marimo/README.md` for complete documentation.
+
+---
+
+### Textual Helpers
 
 ### textual_generator.py
 Generate complete Textual applications, widgets, screens, and tests.
