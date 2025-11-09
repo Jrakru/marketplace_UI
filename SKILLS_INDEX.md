@@ -20,10 +20,10 @@ Complete catalog of all available skills organized by category and difficulty.
 | Advanced | 0 | Advanced | Optional |
 | Development | 0 | All levels | Optional |
 
-## 🎯 Core Skills (Essential)
+## 🎯 Textual Skills (TUI Framework)
 
 ### 01. Getting Started with Textual
-**File:** `skills/core/01_getting_started.py`
+**File:** `skills/textual/core/01_getting_started.py`
 **Difficulty:** Beginner
 **Covers:**
 - Basic app structure
@@ -45,7 +45,7 @@ Complete catalog of all available skills organized by category and difficulty.
 ---
 
 ### 02. App Lifecycle & Structure
-**File:** `skills/core/02_app_lifecycle.py`
+**File:** `skills/textual/core/02_app_lifecycle.py`
 **Difficulty:** Beginner
 **Covers:**
 - Lifecycle events (init, load, mount, unmount)
@@ -70,7 +70,7 @@ Complete catalog of all available skills organized by category and difficulty.
 ## 🎨 Widget Skills
 
 ### 03. Built-in Widget Usage
-**File:** `skills/widgets/01_builtin_widgets.py`
+**File:** `skills/textual/widgets/01_builtin_widgets.py`
 **Difficulty:** Beginner
 **Covers:**
 - Button (all variants)
@@ -97,7 +97,7 @@ Complete catalog of all available skills organized by category and difficulty.
 ---
 
 ### 04. Custom Widget Development
-**File:** `skills/widgets/02_custom_widgets.py`
+**File:** `skills/textual/widgets/02_custom_widgets.py`
 **Difficulty:** Intermediate
 **Covers:**
 - Widget class basics
@@ -126,7 +126,7 @@ Complete catalog of all available skills organized by category and difficulty.
 ## 📐 Layout & Design Skills
 
 ### 05. Layout Systems
-**File:** `skills/layout/01_layouts.py`
+**File:** `skills/textual/layout/01_layouts.py`
 **Difficulty:** Beginner-Intermediate
 **Covers:**
 - Vertical layout (default)
@@ -156,7 +156,7 @@ Complete catalog of all available skills organized by category and difficulty.
 ---
 
 ### 06. CSS Styling (TCSS)
-**File:** `skills/layout/02_css_styling.py`
+**File:** `skills/textual/layout/02_css_styling.py`
 **Difficulty:** Intermediate
 **Covers:**
 - Selectors (type, ID, class, pseudo)
@@ -186,7 +186,7 @@ Complete catalog of all available skills organized by category and difficulty.
 ## ⚡ Interactivity Skills
 
 ### 07. Events and Messages
-**File:** `skills/interactivity/01_events_messages.py`
+**File:** `skills/textual/interactivity/01_events_messages.py`
 **Difficulty:** Intermediate
 **Covers:**
 - Event handlers (on_* methods)
@@ -218,7 +218,7 @@ Complete catalog of all available skills organized by category and difficulty.
 ## 🔄 Reactivity Skills
 
 ### 08. Reactive Attributes
-**File:** `skills/reactivity/01_reactive_attributes.py`
+**File:** `skills/textual/reactivity/01_reactive_attributes.py`
 **Difficulty:** Intermediate
 **Covers:**
 - Basic reactive attributes
@@ -247,7 +247,7 @@ Complete catalog of all available skills organized by category and difficulty.
 ## 🗺️ Navigation Skills
 
 ### 09. Screens and Navigation
-**File:** `skills/navigation/01_screens.py`
+**File:** `skills/textual/navigation/01_screens.py`
 **Difficulty:** Intermediate
 **Covers:**
 - Screen definition
@@ -276,7 +276,7 @@ Complete catalog of all available skills organized by category and difficulty.
 ## 🧪 Testing Skills
 
 ### 10. Snapshot Testing
-**File:** `skills/testing/01_snapshot_testing.py`
+**File:** `skills/textual/testing/01_snapshot_testing.py`
 **Difficulty:** Intermediate
 **Covers:**
 - pytest-textual-snapshot
@@ -391,11 +391,11 @@ pattern = get_pattern("counter")
 ## 🎓 Learning Paths
 
 ### Path 1: Beginner (Build Your First TUI)
-1. Getting Started (core/01)
-2. Built-in Widgets (widgets/01)
-3. Layout Systems (layout/01)
-4. Events and Messages (interactivity/01)
-5. CSS Styling (layout/02)
+1. Getting Started (textual/core/01)
+2. Built-in Widgets (textual/widgets/01)
+3. Layout Systems (textual/layout/01)
+4. Events and Messages (textual/interactivity/01)
+5. CSS Styling (textual/layout/02)
 
 **Goal:** Create simple, functional TUI apps
 **Time:** 2-4 hours
@@ -403,10 +403,10 @@ pattern = get_pattern("counter")
 ---
 
 ### Path 2: Intermediate (Interactive Apps)
-1. Custom Widgets (widgets/02)
-2. Reactive Attributes (reactivity/01)
-3. Screens and Navigation (navigation/01)
-4. Snapshot Testing (testing/01)
+1. Custom Widgets (textual/widgets/02)
+2. Reactive Attributes (textual/reactivity/01)
+3. Screens and Navigation (textual/navigation/01)
+4. Snapshot Testing (textual/testing/01)
 
 **Goal:** Build multi-screen, reactive applications
 **Time:** 4-6 hours
@@ -414,7 +414,7 @@ pattern = get_pattern("counter")
 ---
 
 ### Path 3: Advanced (Professional TUIs)
-1. App Lifecycle (core/02)
+1. App Lifecycle (textual/core/02)
 2. Advanced Testing
 3. Performance Optimization
 4. Complex State Management
@@ -430,41 +430,41 @@ pattern = get_pattern("counter")
 ### I Want To...
 
 **Create a button that does something**
-→ widgets/01_builtin_widgets.py → ButtonDemo
+→ textual/widgets/01_builtin_widgets.py → ButtonDemo
 
 **Build a form with inputs**
-→ widgets/01_builtin_widgets.py → InputDemo
-→ interactivity/01_events_messages.py → FormApp
+→ textual/widgets/01_builtin_widgets.py → InputDemo
+→ textual/interactivity/01_events_messages.py → FormApp
 
 **Display data in a table**
-→ widgets/01_builtin_widgets.py → DataTableDemo
+→ textual/widgets/01_builtin_widgets.py → DataTableDemo
 
 **Make a counter**
-→ reactivity/01_reactive_attributes.py → Counter
+→ textual/reactivity/01_reactive_attributes.py → Counter
 
 **Create a multi-screen app**
-→ navigation/01_screens.py → BasicScreenApp
+→ textual/navigation/01_screens.py → BasicScreenApp
 
 **Show a confirmation dialog**
-→ navigation/01_screens.py → ConfirmModal
+→ textual/navigation/01_screens.py → ConfirmModal
 
 **Style my app**
-→ layout/02_css_styling.py → All examples
+→ textual/layout/02_css_styling.py → All examples
 
 **Arrange widgets in a grid**
-→ layout/01_layouts.py → GridLayoutDemo
+→ textual/layout/01_layouts.py → GridLayoutDemo
 
 **Handle button clicks**
-→ interactivity/01_events_messages.py → BasicEventsApp
+→ textual/interactivity/01_events_messages.py → BasicEventsApp
 
 **Auto-update UI when data changes**
-→ reactivity/01_reactive_attributes.py → All examples
+→ textual/reactivity/01_reactive_attributes.py → All examples
 
 **Test my app**
-→ testing/01_snapshot_testing.py → All tests
+→ textual/testing/01_snapshot_testing.py → All tests
 
 **Create a reusable widget**
-→ widgets/02_custom_widgets.py → All examples
+→ textual/widgets/02_custom_widgets.py → All examples
 
 ---
 
@@ -681,11 +681,11 @@ pattern = get_pattern("counter")
 ## 🎓 Updated Learning Paths
 
 ### Path 1: Textual TUI Development (Beginner)
-1. Getting Started with Textual (core/01)
-2. Built-in Widgets (widgets/01)
-3. Layout Systems (layout/01)
-4. Events and Messages (interactivity/01)
-5. CSS Styling (layout/02)
+1. Getting Started with Textual (textual/core/01)
+2. Built-in Widgets (textual/widgets/01)
+3. Layout Systems (textual/layout/01)
+4. Events and Messages (textual/interactivity/01)
+5. CSS Styling (textual/layout/02)
 
 **Goal:** Create functional TUI applications
 **Time:** 2-4 hours
@@ -706,7 +706,7 @@ pattern = get_pattern("counter")
 ### Path 3: UI/UX Excellence (All Levels)
 1. CLI UX Design Principles (design/01)
 2. General UI/UX Design (design/02)
-3. Apply to Textual apps (layout/02, widgets/01)
+3. Apply to Textual apps (textual/layout/02, textual/widgets/01)
 4. Apply to Marimo notebooks (marimo/02, marimo/03)
 
 **Goal:** Master UI/UX design principles across platforms
@@ -752,4 +752,4 @@ pattern = get_pattern("counter")
 **Pro Tip:**
 - For Textual TUIs: Start with the quick reference (helpers/quick_reference.py) for instant syntax lookups!
 - For Marimo notebooks: Run `marimo tutorial intro` to get started interactively
-- For UI/UX design: Review accessibility guidelines (design/02_general_ui_ux.py) before starting any project
+- For UI/UX design: Review accessibility guidelines (skills/design/02_general_ui_ux.py) before starting any project

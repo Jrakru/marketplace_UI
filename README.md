@@ -22,29 +22,24 @@ This marketplace provides:
 
 ```
 marketplace_UI/
-├── skills/              # Organized by category
-│   ├── core/            # Getting started, app lifecycle (Textual)
-│   ├── widgets/         # Built-in and custom widgets (Textual)
-│   ├── layout/          # Layouts and CSS styling (Textual)
-│   ├── interactivity/   # Events, messages, actions (Textual)
-│   ├── reactivity/      # Reactive attributes (Textual)
-│   ├── navigation/      # Screens and navigation (Textual)
-│   ├── testing/         # Testing patterns (Textual)
+├── skills/              # Organized by framework/category
+│   ├── textual/         # Textual TUI framework skills
+│   │   ├── core/            # Getting started, app lifecycle
+│   │   ├── widgets/         # Built-in and custom widgets
+│   │   ├── layout/          # Layouts and CSS styling
+│   │   ├── interactivity/   # Events, messages, actions
+│   │   ├── reactivity/      # Reactive attributes
+│   │   ├── navigation/      # Screens and navigation
+│   │   └── testing/         # Testing patterns
 │   ├── marimo/          # Marimo reactive notebooks ⭐ NEW
 │   │   ├── 01_getting_started.py
 │   │   ├── 02_widgets_ui.py
 │   │   └── 03_layouts.py
-│   ├── design/          # UI/UX design principles ⭐ NEW
-│   │   ├── 01_cli_ux_principles.py
-│   │   └── 02_general_ui_ux.py
-│   ├── dom/             # DOM queries and manipulation (Textual)
-│   ├── input/           # Input handling and validation (Textual)
-│   ├── advanced/        # Workers, animation, timers (Textual)
-│   ├── development/     # Debugging and devtools (Textual)
-│   ├── accessibility/   # Accessibility features (Textual)
-│   └── integration/     # Integrations (Rich, CLI) (Textual)
+│   └── design/          # UI/UX design principles ⭐ NEW
+│       ├── 01_cli_ux_principles.py
+│       └── 02_general_ui_ux.py
 │
-├── helpers/             # AI agent helper scripts
+├── helpers/             # AI agent helper scripts (Textual-focused)
 │   ├── textual_generator.py    # Generate apps/widgets
 │   ├── template_manager.py     # Code templates
 │   ├── skill_finder.py         # Find relevant skills
@@ -293,40 +288,40 @@ def __(mo, df):
 
 ### Textual Skills
 
-#### Core Skills
+#### Core Skills (skills/textual/core/)
 - **01_getting_started.py** - Project setup, basic app structure, async
 - **02_app_lifecycle.py** - Lifecycle events, configuration, CLI args
 
-### Widget Skills
+#### Widget Skills (skills/textual/widgets/)
 - **01_builtin_widgets.py** - All built-in widgets with examples
 - **02_custom_widgets.py** - Create custom, reusable components
 
-### Layout Skills
+#### Layout Skills (skills/textual/layout/)
 - **01_layouts.py** - Vertical, Horizontal, Grid, Dock, Scrollable
 - **02_css_styling.py** - TCSS syntax, selectors, colors, themes
 
-### Interactivity Skills
+#### Interactivity Skills (skills/textual/interactivity/)
 - **01_events_messages.py** - Events, @on decorator, custom messages
 - **02_actions.py** - Key bindings, action methods
 
-### Reactivity Skills
+#### Reactivity Skills (skills/textual/reactivity/)
 - **01_reactive_attributes.py** - Reactive state, watch/compute methods
 
-### Navigation Skills
+#### Navigation Skills (skills/textual/navigation/)
 - **01_screens.py** - Multi-screen apps, modals, navigation
 
-#### Testing Skills
+#### Testing Skills (skills/textual/testing/)
 - **01_snapshot_testing.py** - Visual regression testing
 - **02_unit_testing.py** - Component testing
 - **03_integration_testing.py** - End-to-end testing
 
-### Marimo Skills ⭐ NEW
+### Marimo Skills (skills/marimo/) ⭐ NEW
 
 - **01_getting_started.py** - Reactive notebooks, cells, basic structure, running notebooks
 - **02_widgets_ui.py** - Interactive UI components (text, slider, dropdown, tables, forms)
 - **03_layouts.py** - Organizing notebooks (hstack, vstack, tabs, accordion, sidebar)
 
-### UI/UX Design Skills ⭐ NEW
+### UI/UX Design Skills (skills/design/) ⭐ NEW
 
 - **01_cli_ux_principles.py** - Human-first design, progressive discovery, error messages, CLI patterns, accessibility
 - **02_general_ui_ux.py** - Color theory, typography, layout, WCAG accessibility, notebook design best practices
