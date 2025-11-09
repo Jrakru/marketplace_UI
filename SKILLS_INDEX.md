@@ -1,4 +1,4 @@
-# Textual Skills Index
+# Skills Index - UI Development Marketplace
 
 Complete catalog of all available skills organized by category and difficulty.
 
@@ -6,22 +6,24 @@ Complete catalog of all available skills organized by category and difficulty.
 
 | Category | Skills | Difficulty | Priority |
 |----------|--------|------------|----------|
-| Core | 2 | Beginner | Essential |
-| Widgets | 2 | Beginner-Intermediate | Essential |
-| Layout | 2 | Beginner-Intermediate | Essential |
-| Interactivity | 1 | Intermediate | Essential |
-| Reactivity | 1 | Intermediate | Recommended |
-| Navigation | 1 | Intermediate | Recommended |
-| Testing | 1 | Intermediate | Recommended |
+| Core (Textual) | 2 | Beginner | Essential |
+| Widgets (Textual) | 2 | Beginner-Intermediate | Essential |
+| Layout (Textual) | 2 | Beginner-Intermediate | Essential |
+| Interactivity (Textual) | 1 | Intermediate | Essential |
+| Reactivity (Textual) | 1 | Intermediate | Recommended |
+| Navigation (Textual) | 1 | Intermediate | Recommended |
+| Testing (Textual) | 1 | Intermediate | Recommended |
+| **Marimo (Notebooks)** | **3** | **Beginner-Intermediate** | **Recommended** |
+| **Design (UI/UX)** | **2** | **All Levels** | **Essential** |
 | DOM | 0 | Intermediate | Optional |
 | Input | 0 | Intermediate | Optional |
 | Advanced | 0 | Advanced | Optional |
 | Development | 0 | All levels | Optional |
 
-## 🎯 Core Skills (Essential)
+## 🎯 Textual Skills (TUI Framework)
 
 ### 01. Getting Started with Textual
-**File:** `skills/core/01_getting_started.py`
+**File:** `skills/textual/core/01_getting_started.py`
 **Difficulty:** Beginner
 **Covers:**
 - Basic app structure
@@ -43,7 +45,7 @@ Complete catalog of all available skills organized by category and difficulty.
 ---
 
 ### 02. App Lifecycle & Structure
-**File:** `skills/core/02_app_lifecycle.py`
+**File:** `skills/textual/core/02_app_lifecycle.py`
 **Difficulty:** Beginner
 **Covers:**
 - Lifecycle events (init, load, mount, unmount)
@@ -68,7 +70,7 @@ Complete catalog of all available skills organized by category and difficulty.
 ## 🎨 Widget Skills
 
 ### 03. Built-in Widget Usage
-**File:** `skills/widgets/01_builtin_widgets.py`
+**File:** `skills/textual/widgets/01_builtin_widgets.py`
 **Difficulty:** Beginner
 **Covers:**
 - Button (all variants)
@@ -95,7 +97,7 @@ Complete catalog of all available skills organized by category and difficulty.
 ---
 
 ### 04. Custom Widget Development
-**File:** `skills/widgets/02_custom_widgets.py`
+**File:** `skills/textual/widgets/02_custom_widgets.py`
 **Difficulty:** Intermediate
 **Covers:**
 - Widget class basics
@@ -124,7 +126,7 @@ Complete catalog of all available skills organized by category and difficulty.
 ## 📐 Layout & Design Skills
 
 ### 05. Layout Systems
-**File:** `skills/layout/01_layouts.py`
+**File:** `skills/textual/layout/01_layouts.py`
 **Difficulty:** Beginner-Intermediate
 **Covers:**
 - Vertical layout (default)
@@ -154,7 +156,7 @@ Complete catalog of all available skills organized by category and difficulty.
 ---
 
 ### 06. CSS Styling (TCSS)
-**File:** `skills/layout/02_css_styling.py`
+**File:** `skills/textual/layout/02_css_styling.py`
 **Difficulty:** Intermediate
 **Covers:**
 - Selectors (type, ID, class, pseudo)
@@ -184,7 +186,7 @@ Complete catalog of all available skills organized by category and difficulty.
 ## ⚡ Interactivity Skills
 
 ### 07. Events and Messages
-**File:** `skills/interactivity/01_events_messages.py`
+**File:** `skills/textual/interactivity/01_events_messages.py`
 **Difficulty:** Intermediate
 **Covers:**
 - Event handlers (on_* methods)
@@ -216,7 +218,7 @@ Complete catalog of all available skills organized by category and difficulty.
 ## 🔄 Reactivity Skills
 
 ### 08. Reactive Attributes
-**File:** `skills/reactivity/01_reactive_attributes.py`
+**File:** `skills/textual/reactivity/01_reactive_attributes.py`
 **Difficulty:** Intermediate
 **Covers:**
 - Basic reactive attributes
@@ -245,7 +247,7 @@ Complete catalog of all available skills organized by category and difficulty.
 ## 🗺️ Navigation Skills
 
 ### 09. Screens and Navigation
-**File:** `skills/navigation/01_screens.py`
+**File:** `skills/textual/navigation/01_screens.py`
 **Difficulty:** Intermediate
 **Covers:**
 - Screen definition
@@ -274,7 +276,7 @@ Complete catalog of all available skills organized by category and difficulty.
 ## 🧪 Testing Skills
 
 ### 10. Snapshot Testing
-**File:** `skills/testing/01_snapshot_testing.py`
+**File:** `skills/textual/testing/01_snapshot_testing.py`
 **Difficulty:** Intermediate
 **Covers:**
 - pytest-textual-snapshot
@@ -389,11 +391,11 @@ pattern = get_pattern("counter")
 ## 🎓 Learning Paths
 
 ### Path 1: Beginner (Build Your First TUI)
-1. Getting Started (core/01)
-2. Built-in Widgets (widgets/01)
-3. Layout Systems (layout/01)
-4. Events and Messages (interactivity/01)
-5. CSS Styling (layout/02)
+1. Getting Started (textual/core/01)
+2. Built-in Widgets (textual/widgets/01)
+3. Layout Systems (textual/layout/01)
+4. Events and Messages (textual/interactivity/01)
+5. CSS Styling (textual/layout/02)
 
 **Goal:** Create simple, functional TUI apps
 **Time:** 2-4 hours
@@ -401,10 +403,10 @@ pattern = get_pattern("counter")
 ---
 
 ### Path 2: Intermediate (Interactive Apps)
-1. Custom Widgets (widgets/02)
-2. Reactive Attributes (reactivity/01)
-3. Screens and Navigation (navigation/01)
-4. Snapshot Testing (testing/01)
+1. Custom Widgets (textual/widgets/02)
+2. Reactive Attributes (textual/reactivity/01)
+3. Screens and Navigation (textual/navigation/01)
+4. Snapshot Testing (textual/testing/01)
 
 **Goal:** Build multi-screen, reactive applications
 **Time:** 4-6 hours
@@ -412,7 +414,7 @@ pattern = get_pattern("counter")
 ---
 
 ### Path 3: Advanced (Professional TUIs)
-1. App Lifecycle (core/02)
+1. App Lifecycle (textual/core/02)
 2. Advanced Testing
 3. Performance Optimization
 4. Complex State Management
@@ -428,41 +430,41 @@ pattern = get_pattern("counter")
 ### I Want To...
 
 **Create a button that does something**
-→ widgets/01_builtin_widgets.py → ButtonDemo
+→ textual/widgets/01_builtin_widgets.py → ButtonDemo
 
 **Build a form with inputs**
-→ widgets/01_builtin_widgets.py → InputDemo
-→ interactivity/01_events_messages.py → FormApp
+→ textual/widgets/01_builtin_widgets.py → InputDemo
+→ textual/interactivity/01_events_messages.py → FormApp
 
 **Display data in a table**
-→ widgets/01_builtin_widgets.py → DataTableDemo
+→ textual/widgets/01_builtin_widgets.py → DataTableDemo
 
 **Make a counter**
-→ reactivity/01_reactive_attributes.py → Counter
+→ textual/reactivity/01_reactive_attributes.py → Counter
 
 **Create a multi-screen app**
-→ navigation/01_screens.py → BasicScreenApp
+→ textual/navigation/01_screens.py → BasicScreenApp
 
 **Show a confirmation dialog**
-→ navigation/01_screens.py → ConfirmModal
+→ textual/navigation/01_screens.py → ConfirmModal
 
 **Style my app**
-→ layout/02_css_styling.py → All examples
+→ textual/layout/02_css_styling.py → All examples
 
 **Arrange widgets in a grid**
-→ layout/01_layouts.py → GridLayoutDemo
+→ textual/layout/01_layouts.py → GridLayoutDemo
 
 **Handle button clicks**
-→ interactivity/01_events_messages.py → BasicEventsApp
+→ textual/interactivity/01_events_messages.py → BasicEventsApp
 
 **Auto-update UI when data changes**
-→ reactivity/01_reactive_attributes.py → All examples
+→ textual/reactivity/01_reactive_attributes.py → All examples
 
 **Test my app**
-→ testing/01_snapshot_testing.py → All tests
+→ textual/testing/01_snapshot_testing.py → All tests
 
 **Create a reusable widget**
-→ widgets/02_custom_widgets.py → All examples
+→ textual/widgets/02_custom_widgets.py → All examples
 
 ---
 
@@ -530,6 +532,238 @@ pattern = get_pattern("counter")
 
 ---
 
+## 📓 Marimo Skills (Reactive Notebooks)
+
+### 11. Getting Started with Marimo
+**File:** `skills/marimo/01_getting_started.py`
+**Difficulty:** Beginner
+**Covers:**
+- Installation and setup
+- Basic notebook structure
+- Reactive execution model
+- Creating cells
+- Import patterns
+- Running notebooks
+
+**Key Examples:**
+- BasicMarimoNotebook
+- ReactiveCounter
+- InteractiveDataVisualization
+
+**When to Use:**
+- Building reactive Python notebooks
+- Data exploration and analysis
+- Creating interactive dashboards
+- Reproducible research
+- Educational content
+
+---
+
+### 12. Marimo Widgets and UI Components
+**File:** `skills/marimo/02_widgets_ui.py`
+**Difficulty:** Beginner-Intermediate
+**Covers:**
+- Input widgets (text, number, slider)
+- Selection widgets (dropdown, checkbox, radio)
+- Data widgets (table, dataframe)
+- File upload widgets
+- Code editor widget
+- Composite widgets (form, array, dictionary)
+- Button actions
+- Widget reactivity
+
+**Key Examples:**
+- TextInputDemo
+- DataTableExplorer
+- FormSubmission
+- InteractiveControls
+
+**When to Use:**
+- Creating interactive notebooks
+- Building data exploration tools
+- Form-based data entry
+- Parameter tuning interfaces
+- Dashboard controls
+
+---
+
+### 13. Marimo Layouts and UI Organization
+**File:** `skills/marimo/03_layouts.py`
+**Difficulty:** Intermediate
+**Covers:**
+- Horizontal stacks (mo.hstack)
+- Vertical stacks (mo.vstack)
+- Grid layouts
+- Tabs (mo.ui.tabs)
+- Accordions (mo.accordion)
+- Sidebar (mo.sidebar)
+- Navigation menus
+- Callouts and alerts
+
+**Key Examples:**
+- DashboardLayout
+- TabbedInterface
+- GridLayout
+- SidebarNavigation
+
+**When to Use:**
+- Organizing complex notebooks
+- Creating dashboard-style layouts
+- Building multi-section interfaces
+- Navigation in large notebooks
+- Highlighting important information
+
+---
+
+### 14. Working with Marimo in Claude Code
+**File:** `skills/marimo/04_working_with_marimo.py`
+**Difficulty:** Beginner-Intermediate
+**Covers:**
+- Using marimo helper scripts
+- CLI commands and workflows
+- Programmatic notebook generation
+- Validation and debugging
+- Export and deployment
+- Best practices for Claude Code integration
+
+**Key Features:**
+- Complete workflow examples
+- Helper script demonstrations
+- CLI reference guide
+- Common patterns and templates
+
+**When to Use:**
+- Integrating marimo with Claude Code
+- Automating notebook creation
+- Building notebook generation tools
+- Learning marimo CLI
+- Setting up deployment pipelines
+
+---
+
+## 🎨 UI/UX Design Skills
+
+### 14. CLI UX Design Principles
+**File:** `skills/design/01_cli_ux_principles.py`
+**Difficulty:** All Levels
+**Covers:**
+- Human-first design
+- Progressive discovery
+- Helpful error messages
+- Arguments vs flags
+- Consistency patterns
+- Colors and formatting
+- Output modes (human/machine)
+- CLI accessibility
+- Common CLI patterns
+
+**Key Concepts:**
+- Feedback and progress indicators
+- Interactive prompts
+- Documentation in tools
+- Composability and pipes
+- Testing CLI UX
+
+**When to Use:**
+- Building command-line tools
+- Creating developer tools
+- Designing TUI applications
+- Improving CLI user experience
+- Writing helpful error messages
+
+---
+
+### 15. General UI/UX Design Principles
+**File:** `skills/design/02_general_ui_ux.py`
+**Difficulty:** All Levels
+**Covers:**
+- Core UX principles (clarity, consistency, feedback)
+- Color theory and harmonies
+- Typography principles
+- Layout and grid systems
+- Accessibility (WCAG 2.1)
+- Notebook interface design
+- Visual hierarchy
+- Responsive design
+- Mobile-first approach
+
+**Key Concepts:**
+- POUR principles (Perceivable, Operable, Understandable, Robust)
+- Contrast ratios and color accessibility
+- F and Z reading patterns
+- White space and visual balance
+- Progressive disclosure
+
+**When to Use:**
+- Designing any user interface
+- Creating accessible applications
+- Building notebook interfaces
+- Improving existing UX
+- Ensuring WCAG compliance
+- Color scheme selection
+
+---
+
+## 🎓 Updated Learning Paths
+
+### Path 1: Textual TUI Development (Beginner)
+1. Getting Started with Textual (textual/core/01)
+2. Built-in Widgets (textual/widgets/01)
+3. Layout Systems (textual/layout/01)
+4. Events and Messages (textual/interactivity/01)
+5. CSS Styling (textual/layout/02)
+
+**Goal:** Create functional TUI applications
+**Time:** 2-4 hours
+
+---
+
+### Path 2: Marimo Reactive Notebooks (Beginner)
+1. Getting Started with Marimo (marimo/01)
+2. Widgets and UI Components (marimo/02)
+3. Layouts and Organization (marimo/03)
+4. General UI/UX Principles (design/02)
+
+**Goal:** Build interactive, reactive notebooks
+**Time:** 3-5 hours
+
+---
+
+### Path 3: UI/UX Excellence (All Levels)
+1. CLI UX Design Principles (design/01)
+2. General UI/UX Design (design/02)
+3. Apply to Textual apps (textual/layout/02, textual/widgets/01)
+4. Apply to Marimo notebooks (marimo/02, marimo/03)
+
+**Goal:** Master UI/UX design principles across platforms
+**Time:** 4-6 hours
+
+---
+
+## 🆕 Updated Use Cases
+
+### Use Case: Interactive Data Dashboard (Marimo)
+**Skills Needed:**
+1. marimo/01 (Getting Started)
+2. marimo/02 (Widgets for controls)
+3. marimo/03 (Dashboard layouts)
+4. design/02 (Color theory, accessibility)
+
+### Use Case: CLI Tool with Great UX
+**Skills Needed:**
+1. design/01 (CLI UX principles)
+2. core/01 (If using Textual for TUI)
+3. design/02 (General UX principles)
+
+### Use Case: Accessible Notebook Interface
+**Skills Needed:**
+1. marimo/01 (Notebook basics)
+2. marimo/02 (UI components)
+3. design/02 (Accessibility, color contrast)
+4. marimo/03 (Layouts)
+
+---
+
 ## 📖 Next Steps
 
 1. **Browse Skills** - Explore the skills/ directory
@@ -541,4 +775,7 @@ pattern = get_pattern("counter")
 
 ---
 
-**Pro Tip:** Start with the quick reference (helpers/quick_reference.py) for instant syntax lookups!
+**Pro Tip:**
+- For Textual TUIs: Start with the quick reference (helpers/quick_reference.py) for instant syntax lookups!
+- For Marimo notebooks: Run `marimo tutorial intro` to get started interactively
+- For UI/UX design: Review accessibility guidelines (skills/design/02_general_ui_ux.py) before starting any project
