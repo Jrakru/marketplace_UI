@@ -12,7 +12,7 @@
   "plugins": [
     {
       "name": "textual-getting-started",
-      "source": "skills/textual/core/01_getting_started.py",
+      "source": "./skills/textual/core/01_getting_started.py",
       "description": "Learn Textual basics: app structure, project setup, hot reload, and async patterns",
       "version": "1.0.0",
       "author": {
@@ -24,7 +24,7 @@
     },
     {
       "name": "textual-app-lifecycle",
-      "source": "skills/textual/core/02_app_lifecycle.py",
+      "source": "./skills/textual/core/02_app_lifecycle.py",
       "description": "Master Textual app lifecycle: initialization, mount/unmount, configuration, and CLI args",
       "version": "1.0.0",
       "author": {
@@ -36,7 +36,7 @@
     },
     {
       "name": "textual-builtin-widgets",
-      "source": "skills/textual/widgets/01_builtin_widgets.py",
+      "source": "./skills/textual/widgets/01_builtin_widgets.py",
       "description": "Complete guide to Textual built-in widgets: Button, Input, DataTable, Tree, Select, and more",
       "version": "1.0.0",
       "author": {
@@ -48,7 +48,7 @@
     },
     {
       "name": "textual-custom-widgets",
-      "source": "skills/textual/widgets/02_custom_widgets.py",
+      "source": "./skills/textual/widgets/02_custom_widgets.py",
       "description": "Create reusable, encapsulated custom widgets for Textual applications",
       "version": "1.0.0",
       "author": {
@@ -60,7 +60,7 @@
     },
     {
       "name": "textual-layouts",
-      "source": "skills/textual/layout/01_layouts.py",
+      "source": "./skills/textual/layout/01_layouts.py",
       "description": "Master Textual layout systems: Vertical, Horizontal, Grid, Dock, and Scrollable containers",
       "version": "1.0.0",
       "author": {
@@ -72,7 +72,7 @@
     },
     {
       "name": "textual-css-styling",
-      "source": "skills/textual/layout/02_css_styling.py",
+      "source": "./skills/textual/layout/02_css_styling.py",
       "description": "Style Textual apps with TCSS: selectors, colors, borders, themes, and design tokens",
       "version": "1.0.0",
       "author": {
@@ -84,7 +84,7 @@
     },
     {
       "name": "textual-events-messages",
-      "source": "skills/textual/interactivity/01_events_messages.py",
+      "source": "./skills/textual/interactivity/01_events_messages.py",
       "description": "Handle events and messages in Textual: @on decorator, custom messages, bubbling",
       "version": "1.0.0",
       "author": {
@@ -96,7 +96,7 @@
     },
     {
       "name": "textual-reactive-attributes",
-      "source": "skills/textual/reactivity/01_reactive_attributes.py",
+      "source": "./skills/textual/reactivity/01_reactive_attributes.py",
       "description": "Build reactive UIs with auto-updating state, watch methods, and computed values",
       "version": "1.0.0",
       "author": {
@@ -108,7 +108,7 @@
     },
     {
       "name": "textual-screens-navigation",
-      "source": "skills/textual/navigation/01_screens.py",
+      "source": "./skills/textual/navigation/01_screens.py",
       "description": "Multi-screen apps and modal dialogs: screen lifecycle, push/pop, navigation patterns",
       "version": "1.0.0",
       "author": {
@@ -120,7 +120,7 @@
     },
     {
       "name": "textual-snapshot-testing",
-      "source": "skills/textual/testing/01_snapshot_testing.py",
+      "source": "./skills/textual/testing/01_snapshot_testing.py",
       "description": "Visual regression testing for Textual apps with pytest and snapshot testing",
       "version": "1.0.0",
       "author": {
@@ -132,7 +132,7 @@
     },
     {
       "name": "marimo-getting-started",
-      "source": "skills/marimo/01_getting_started.py",
+      "source": "./skills/marimo/01_getting_started.py",
       "description": "Learn Marimo basics: reactive notebooks, cells, auto-execution, and notebook structure",
       "version": "1.0.0",
       "author": {
@@ -144,7 +144,7 @@
     },
     {
       "name": "marimo-widgets-ui",
-      "source": "skills/marimo/02_widgets_ui.py",
+      "source": "./skills/marimo/02_widgets_ui.py",
       "description": "Interactive Marimo widgets: sliders, dropdowns, text inputs, data tables, forms",
       "version": "1.0.0",
       "author": {
@@ -156,7 +156,7 @@
     },
     {
       "name": "marimo-layouts",
-      "source": "skills/marimo/03_layouts.py",
+      "source": "./skills/marimo/03_layouts.py",
       "description": "Organize Marimo notebooks with layouts: hstack, vstack, tabs, accordion, sidebar",
       "version": "1.0.0",
       "author": {
@@ -168,7 +168,7 @@
     },
     {
       "name": "marimo-claude-integration",
-      "source": "skills/marimo/04_working_with_marimo.py",
+      "source": "./skills/marimo/04_working_with_marimo.py",
       "description": "Use Marimo with Claude Code: helper scripts, CLI commands, and workflows",
       "version": "1.0.0",
       "author": {
@@ -180,7 +180,7 @@
     },
     {
       "name": "cli-ux-principles",
-      "source": "skills/design/01_cli_ux_principles.py",
+      "source": "./skills/design/01_cli_ux_principles.py",
       "description": "Human-first CLI design: progressive discovery, helpful errors, accessibility, best practices",
       "version": "1.0.0",
       "author": {
@@ -192,7 +192,7 @@
     },
     {
       "name": "general-ui-ux",
-      "source": "skills/design/02_general_ui_ux.py",
+      "source": "./skills/design/02_general_ui_ux.py",
       "description": "UI/UX design principles: color theory, typography, accessibility, layout, WCAG compliance",
       "version": "1.0.0",
       "author": {
