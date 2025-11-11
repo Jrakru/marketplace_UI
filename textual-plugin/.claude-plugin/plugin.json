@@ -1,0 +1,110 @@
+{
+  "name": "textual-plugin",
+  "version": "1.0.0",
+  "description": "A comprehensive Claude Code plugin for Textual development. Streamline TUI app creation with scaffolding, widgets, layouts, styling, and debugging tools.",
+  "author": "Claude Code Plugin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/textual-plugin"
+  },
+  "homepage": "https://github.com/yourusername/textual-plugin",
+  "license": "MIT",
+  "tags": ["textual", "tui", "python", "terminal", "development", "ui"],
+  "engines": {
+    "claude": ">= 3.0"
+  },
+  "skills": [
+    {
+      "name": "creating-textual-apps",
+      "description": "Generate complete Textual applications with widgets, layouts, styling, and best practices",
+      "path": "skills/creating-textual-apps.md"
+    }
+  ],
+  "commands": [
+    {
+      "name": "textual-init",
+      "description": "Initialize a new Textual project with template structure",
+      "path": "commands/textual-init.md"
+    },
+    {
+      "name": "textual-run",
+      "description": "Run Textual applications with debug options",
+      "path": "commands/textual-run.md"
+    },
+    {
+      "name": "textual-new-widget",
+      "description": "Create a new custom Textual widget with proper structure",
+      "path": "commands/textual-new-widget.md"
+    },
+    {
+      "name": "textual-style",
+      "description": "Apply Textual styling, themes, and CSS utilities",
+      "path": "commands/textual-style.md"
+    },
+    {
+      "name": "textual-debug",
+      "description": "Debug and troubleshoot Textual applications",
+      "path": "commands/textual-debug.md"
+    }
+  ],
+  "helpers": [
+    {
+      "name": "textual-widgets-reference",
+      "description": "Complete reference guide for Textual widgets with examples",
+      "path": "helpers/textual-widgets-reference.md"
+    },
+    {
+      "name": "textual-layouts-guide",
+      "description": "Master Textual layouts: Vertical, Horizontal, Grid, Dock, and more",
+      "path": "helpers/textual-layouts-guide.md"
+    },
+    {
+      "name": "textual-css-styling",
+      "description": "Textual CSS styling patterns, themes, and best practices",
+      "path": "helpers/textual-css-styling.md"
+    },
+    {
+      "name": "textual-events-handling",
+      "description": "Textual event system, message handling, and action patterns",
+      "path": "helpers/textual-events-handling.md"
+    },
+    {
+      "name": "textual-data-binding",
+      "description": "Textual reactive data binding and MVVM patterns",
+      "path": "helpers/textual-data-binding.md"
+    },
+    {
+      "name": "textual-testing-utilities",
+      "description": "Testing strategies and utilities for Textual applications",
+      "path": "helpers/textual-testing-utilities.md"
+    },
+    {
+      "name": "textual-performance",
+      "description": "Performance optimization techniques for Textual apps",
+      "path": "helpers/textual-performance.md"
+    },
+    {
+      "name": "textual-examples-collection",
+      "description": "Common Textual patterns and code examples",
+      "path": "helpers/textual-examples-collection.md"
+    }
+  ],
+  "config": {
+    "default_project_name": "my_textual_app",
+    "default_python_version": "3.8+",
+    "include_examples": true,
+    "include_tests": true,
+    "include_docs": true
+  },
+  "keywords": [
+    "textual",
+    "tui",
+    "terminal-user-interface",
+    "python",
+    "textual-dev",
+    "cli",
+    "command-line",
+    "dashboard",
+    "terminal"
+  ]
+}
